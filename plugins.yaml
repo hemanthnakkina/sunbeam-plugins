@@ -1,0 +1,27 @@
+sunbeam-plugins:
+  description: Sunbeam core plugins
+  plugins:
+    - name: "example1"
+      version: "0.0.1"
+      description: "Openstack plugin with Terraform plan in sunbeam-terraform repo"
+      path: plugins.example1.plugin.HeatPlugin
+      supported_architectures:
+        - amd64
+    - name: "example2"
+      version: "0.0.1"
+      description: "Openstack plugin with Terraform plan in plugin directory itself"
+      path: plugins.example2.plugin.OpenstackCPPlugin
+      supported_architectures:
+        - amd64
+    - name: "example3"
+      version: "0.0.1"
+      description: "Openstack plugin based on OpenStackControlPlanePlugin interface and Terraform plan in sunbeam-terraform repo"
+      path: plugins.example3.plugin.HeatPlugin
+      supported_architectures:
+        - amd64
+    - name: "example4"
+      version: "0.0.1"
+      description: "Openstack plugin based on OpenStackControlPlanePlugin interface and Terraform plan in plugin directory itself"
+      path: plugins.example2.plugin.OpenstackCPPlugin
+      supported_architectures:
+        - amd64
